@@ -1,0 +1,106 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fbfbfd;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Estilos para el encabezado */
+.encabezado {
+  text-align: center;
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+/* Imagen redonda */
+.perfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.habilidades {
+  background-color: #ffffff;
+  padding: 20px 30px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  max-width: 400px;
+  text-align: center;
+}
+
+.habilidades h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades li {
+  background-color: #e4e4e4;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.contacto {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contacto h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.btn-contacto {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 500px) {
+  .tarjeta {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .tarjeta img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tarjeta button {
+    padding: 8px 12px;
+  }
+}
