@@ -1,38 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Presentacion</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sebastián Valbuena | Portafolio Personal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <header class="encabezado">
-        <img src="images/Foto_Perfil.png" alt="foto_perfil" class="perfil">
-        <h1>Sebastian Valbuena</h1>
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-down">
+      <img src="images/Foto_Perfil.png" alt="Foto de Sebastián Valbuena" class="perfil" loading="lazy" />
+      <div class="texto-hero">
+        <h1>Sebastián Valbuena</h1>
         <p>Apasionado por la tecnología, el café y el desarrollo web</p>
-    </header>
-    
-    <section class="habilidades">
-  <h2>Mis habilidades</h2>
-  <ul>
-    <li>💻 HTML & CSS</li>
-    <li>💻 JavaScript</li>
-    <li>💻 Python</li>
-    <li>💻 Git & GitHub</li>
-    <li>📡Linux básico</li>
-    <li>💻SQL</li>
-  </ul>
-</section>
+      </div>
+    </div>
+  </header>
 
-<section class="contacto">
-  <h2>¿Quieres contactarme?</h2>
-  <a href="mailto:jonhtsebastian645@gmail.com" class="btn-contacto">Contáctame</a>
-</section>
+  <main>
 
+    <!-- Sobre mí -->
+    <section class="seccion sobre-mi" id="sobre-mi" data-aos="fade-up">
+      <h2>✍️ Sobre mí</h2>
+      <p>
+        Soy Sebastián Valbuena, tecnólogo en informática en formación, apasionado por la tecnología, el diseño web y la innovación en productos derivados del café. Actualmente me enfoco en fortalecer mis habilidades como desarrollador frontend, dominando tecnologías como HTML, CSS, JavaScript y React, y combinando estos conocimientos con un fuerte interés por el diseño de interfaces intuitivas y funcionales.
+      </p>
+      <p>
+        Disfruto creando soluciones web prácticas y visualmente atractivas, así como explorando nuevas formas de conectar la tecnología con el entorno rural y cafetero. Busco oportunidades para crecer como desarrollador frontend junior, trabajar en proyectos reales y contribuir con mi entusiasmo, creatividad y ganas de aprender.
+      </p>
+    </section>
 
+    <!-- Habilidades -->
+    <section class="seccion habilidades" id="habilidades" data-aos="fade-up">
+      <h2>🛠️ Habilidades Técnicas</h2>
+      <div class="grid-habilidades">
+        <div class="habilidad">💻 HTML & CSS</div>
+        <div class="habilidad">💻 JavaScript</div>
+        <div class="habilidad">🐍 Python</div>
+        <div class="habilidad">🔧 Git & GitHub</div>
+        <div class="habilidad">🐧 Linux básico</div>
+        <div class="habilidad">💾 SQL</div>
+      </div>
+    </section>
 
+    <!-- Herramientas -->
+    <section class="seccion herramientas" data-aos="fade-up">
+      <h2>🧰 Herramientas que utilizo</h2>
+      <div class="grid-habilidades">
+        <div class="habilidad">💡 VS Code</div>
+        <div class="habilidad">🧪 Postman</div>
+        <div class="habilidad">🎨 Figma</div>
+        <div class="habilidad">📦 GitHub Pages</div>
+        <div class="habilidad">☁️ Netlify</div>
+        <div class="habilidad">🧮 SQLite / MySQL</div>
+      </div>
+    </section>
 
+    <!-- Proyectos -->
+    <section class="seccion proyectos" id="proyectos" data-aos="fade-up">
+      <h2>🚀 Proyectos Destacados</h2>
+      <div class="grid-proyectos">
+        <div class="proyecto">
+          <h3>📋 App de Tareas</h3>
+          <p>Aplicación web para gestionar tareas del día con JavaScript y almacenamiento local.</p>
+          <a href="https://sebasjon.github.io/app-tareas/" target="_blank">Ver proyecto</a>
+        </div>
+        <div class="proyecto">
+          <h3>📦 Inventario de Diademas</h3>
+          <p>Sistema en Flask con base de datos, exportación a PDF y panel de gestión.</p>
+          <a href="https://github.com/Sebasjon/inventario-diademas" target="_blank">Ver proyecto</a>
+        </div>
+        <div class="proyecto">
+          <h3>🌱 CaféTech Landing</h3>
+          <p>Landing page ficticia de un café tecnológico, hecha con HTML y CSS.</p>
+          <a href="https://sebasjon.github.io/cafetech-landing/" target="_blank">Ver proyecto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="seccion contacto" id="contacto" data-aos="fade-up">
+      <h2>📬 ¿Quieres contactarme?</h2>
+      <div class="botones-contacto">
+        <a href="mailto:jonhtsebastian645@gmail.com" class="btn">✉️ Correo</a>
+        <a href="https://wa.me/573233279806" target="_blank" class="btn">💬 WhatsApp</a>
+        <a href="https://github.com/Sebasjon" target="_blank" class="btn">🐙 GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón volver arriba -->
+  <a href="#" class="btn-volver-arriba">⬆️</a>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Sebastián Valbuena. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
